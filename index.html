@@ -1,0 +1,1036 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sri Annapoorneshwari Chat | Cubbonpet, Bengaluru</title>
+  <meta name="description" content="Sri Annapoorneshwari Chat in Cubbonpet, Bengaluru. Hygienic, affordable chats for walk-ins, corporate events, and marriage catering with 15 years of expertise.">
+  <style>
+    :root {
+      --ink: #191613;
+      --muted: #6b6258;
+      --paper: #fffaf0;
+      --soft: #f3ead9;
+      --line: rgba(25, 22, 19, .13);
+      --red: #b73524;
+      --red-dark: #842416;
+      --saffron: #f3b72a;
+      --green: #138a58;
+      --blue: #163a66;
+      --shadow: 0 22px 60px rgba(45, 31, 19, .16);
+      --radius: 8px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; }
+    .wrap { width: min(1160px, calc(100% - 40px)); margin: 0 auto; }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(255, 250, 240, .9);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+    }
+    .mark {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      flex: 0 0 auto;
+      background: var(--red);
+      color: #ffe29a;
+      font-family: Georgia, serif;
+      font-weight: 700;
+      border: 2px solid var(--saffron);
+    }
+    .brand strong {
+      display: block;
+      color: var(--red-dark);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 18px;
+      line-height: 1.05;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .brand span:last-child {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      margin-top: 2px;
+    }
+    .links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      color: #51483f;
+      font-size: 14px;
+      font-weight: 650;
+    }
+    .links a:hover { color: var(--red); }
+    .nav-actions { display: flex; align-items: center; gap: 10px; }
+    .social-icon {
+      width: 44px;
+      height: 44px;
+      flex: 0 0 auto;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      background: #fff7e8;
+      color: var(--red-dark);
+    }
+    .social-icon:hover {
+      background: var(--ink);
+      color: white;
+      transform: translateY(-1px);
+    }
+    .social-icon.whatsapp {
+      background: #1f9d5b;
+      color: white;
+      border-color: transparent;
+    }
+    .icon-btn {
+      width: 42px;
+      height: 42px;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff7e8;
+      color: var(--ink);
+      cursor: pointer;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      min-height: 44px;
+      padding: 12px 18px;
+      border-radius: 8px;
+      font-weight: 800;
+      font-size: 14px;
+      border: 1px solid transparent;
+      transition: transform .18s ease, background .18s ease, color .18s ease;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .primary { background: var(--red); color: white; }
+    .primary:hover { background: var(--red-dark); }
+    .dark { background: var(--ink); color: var(--saffron); }
+    .dark:hover { background: var(--blue); }
+    .outline { border-color: rgba(25, 22, 19, .28); color: var(--ink); background: rgba(255,255,255,.42); }
+    .outline:hover { background: var(--ink); color: white; }
+    .whatsapp { background: #1f9d5b; color: white; }
+    .mobile-menu {
+      display: none;
+      padding: 0 0 18px;
+      border-top: 1px solid var(--line);
+    }
+    .mobile-menu a {
+      display: block;
+      padding: 13px 0;
+      color: #51483f;
+      font-weight: 750;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .hero {
+      min-height: calc(100svh - 72px);
+      display: grid;
+      align-items: end;
+      position: relative;
+      overflow: hidden;
+      background:
+        linear-gradient(90deg, rgba(25,22,19,.9) 0%, rgba(25,22,19,.72) 36%, rgba(25,22,19,.15) 72%),
+        url("assets/chaat-hero.png") center / cover no-repeat;
+      color: white;
+    }
+    .hero .wrap {
+      width: min(1180px, calc(100% - 40px));
+      padding: 78px 0 54px;
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--saffron);
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+    .eyebrow:before {
+      content: "";
+      width: 28px;
+      height: 2px;
+      background: currentColor;
+    }
+    h1, h2, h3 { margin: 0; }
+    h1 {
+      max-width: 780px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(44px, 8vw, 88px);
+      line-height: .95;
+      letter-spacing: 0;
+    }
+    .hero p {
+      max-width: 590px;
+      margin: 24px 0 30px;
+      color: rgba(255,255,255,.86);
+      font-size: clamp(17px, 2vw, 20px);
+    }
+    .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+    .hero-meta {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 1px;
+      margin-top: 58px;
+      max-width: 880px;
+      background: rgba(255,255,255,.2);
+      border: 1px solid rgba(255,255,255,.22);
+      border-radius: var(--radius);
+      overflow: hidden;
+      backdrop-filter: blur(12px);
+    }
+    .hero-meta div {
+      padding: 18px 16px;
+      background: rgba(25,22,19,.44);
+      min-width: 0;
+    }
+    .hero-meta strong {
+      display: block;
+      color: #ffe29a;
+      font-family: Georgia, serif;
+      font-size: 27px;
+      line-height: 1;
+    }
+    .hero-meta span {
+      display: block;
+      color: rgba(255,255,255,.75);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      margin-top: 8px;
+    }
+
+    section { padding: 92px 0; }
+    .section-head {
+      max-width: 720px;
+      margin-bottom: 38px;
+    }
+    .center { text-align: center; margin-left: auto; margin-right: auto; }
+    h2 {
+      color: var(--red-dark);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(32px, 4.7vw, 56px);
+      line-height: 1.03;
+      letter-spacing: 0;
+    }
+    .lead {
+      margin: 14px 0 0;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .audience {
+      background: var(--soft);
+      border-bottom: 1px solid var(--line);
+    }
+    .audience-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+    .audience-card, .review, .menu-card {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--paper);
+      box-shadow: 0 1px 0 rgba(255,255,255,.6) inset;
+    }
+    .audience-card {
+      padding: 26px;
+      min-height: 260px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .audience-card small {
+      color: var(--red);
+      font-weight: 900;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+    .audience-card h3 {
+      margin-top: 16px;
+      color: var(--blue);
+      font-size: 27px;
+      font-family: Georgia, serif;
+      line-height: 1.08;
+    }
+    .audience-card p {
+      color: var(--muted);
+      margin: 14px 0 0;
+      font-size: 15.5px;
+    }
+    .mini-list {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 22px;
+    }
+    .mini-list span {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 7px 10px;
+      background: #fff5df;
+      color: #5b4731;
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .story-grid {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 54px;
+      align-items: center;
+    }
+    .proof-board {
+      background: #f5c338;
+      border: 8px solid var(--red);
+      border-radius: var(--radius);
+      padding: 34px;
+      box-shadow: var(--shadow);
+      transform: rotate(-.5deg);
+    }
+    .proof-board h3 {
+      color: var(--red-dark);
+      font-family: Georgia, serif;
+      font-size: clamp(28px, 4vw, 44px);
+      line-height: 1;
+      text-align: center;
+    }
+    .proof-board p {
+      margin: 16px 0 0;
+      color: #17375e;
+      text-align: center;
+      font-weight: 850;
+    }
+    .proof-list {
+      margin: 28px 0 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 12px;
+    }
+    .proof-list li {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 12px 0;
+      border-top: 1px dashed rgba(132,36,22,.42);
+      color: #17375e;
+      font-weight: 800;
+    }
+    .story-copy p {
+      color: var(--muted);
+      font-size: 17px;
+      margin: 0 0 18px;
+    }
+    .spotlight {
+      margin-top: 26px;
+      padding: 22px;
+      border-left: 4px solid var(--saffron);
+      background: #fff5df;
+      color: #43362b;
+      border-radius: 0 var(--radius) var(--radius) 0;
+      font-weight: 750;
+    }
+
+    .menu {
+      background: #fbf6e8;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+    .menu-layout {
+      display: grid;
+      grid-template-columns: .78fr 1.22fr;
+      gap: 34px;
+      align-items: start;
+    }
+    .menu-card { padding: 26px; position: sticky; top: 96px; }
+    .menu-card h3 {
+      color: var(--blue);
+      font-family: Georgia, serif;
+      font-size: 30px;
+      line-height: 1.08;
+      margin-bottom: 12px;
+    }
+    .menu-card p { color: var(--muted); margin: 0 0 20px; }
+    .dish-strip {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin-top: 22px;
+    }
+    .dish {
+      min-height: 104px;
+      border-radius: var(--radius);
+      padding: 13px;
+      display: flex;
+      align-items: end;
+      color: white;
+      font-weight: 900;
+      background:
+        linear-gradient(180deg, rgba(25,22,19,.05), rgba(25,22,19,.72)),
+        url("assets/menu/bhel.jpg") center / cover;
+    }
+    .dish:nth-child(2) { background-image: linear-gradient(180deg, rgba(25,22,19,.05), rgba(25,22,19,.72)), url("assets/menu/nippat.jpg"); }
+    .dish:nth-child(3) { background-image: linear-gradient(180deg, rgba(25,22,19,.05), rgba(25,22,19,.72)), url("assets/menu/dahi.jpg"); }
+    .dish:nth-child(4) { background-image: linear-gradient(180deg, rgba(25,22,19,.05), rgba(25,22,19,.72)), url("assets/menu/bun.jpg"); }
+    .menu-group {
+      margin-bottom: 30px;
+      padding-bottom: 22px;
+      border-bottom: 1px solid var(--line);
+    }
+    .menu-group:last-child { border-bottom: 0; margin-bottom: 0; }
+    .menu-group h3 {
+      color: var(--red-dark);
+      font-family: Georgia, serif;
+      font-size: 29px;
+      margin-bottom: 16px;
+    }
+    .items {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+    .item {
+      display: grid;
+      grid-template-rows: 132px auto;
+      min-width: 0;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--paper);
+      color: #2d2924;
+      font-size: 14px;
+      font-weight: 850;
+    }
+    .item:before {
+      content: "";
+      min-height: 132px;
+      background: var(--thumb) center / cover no-repeat;
+      border-bottom: 1px solid var(--line);
+    }
+    .item strong {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 12px;
+      min-height: 58px;
+    }
+    .item span { color: var(--red); white-space: nowrap; font-family: Georgia, serif; font-size: 16px; }
+    .img-bhel { --thumb: url("assets/menu/bhel.jpg"); }
+    .img-tikki { --thumb: url("assets/menu/tikki.jpg"); }
+    .img-nippat { --thumb: url("assets/menu/nippat.jpg"); }
+    .img-sprouts { --thumb: url("assets/menu/sprouts.jpg"); }
+    .img-dahi { --thumb: url("assets/menu/dahi.jpg"); }
+    .img-bun { --thumb: url("assets/menu/bun.jpg"); }
+    .img-corn { --thumb: url("assets/menu/corn.jpg"); }
+    .img-pineapple { --thumb: url("assets/menu/pineapple.jpg"); }
+
+    .catering {
+      background: var(--red-dark);
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+    .catering:before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(120deg, rgba(243,183,42,.18), transparent 50%);
+      pointer-events: none;
+    }
+    .catering .wrap { position: relative; }
+    .catering h2 { color: white; max-width: 900px; }
+    .catering .lead { color: rgba(255,255,255,.78); max-width: 680px; }
+    .event-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 38px;
+    }
+    .event {
+      padding: 24px;
+      border: 1px solid rgba(255,255,255,.18);
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.08);
+      backdrop-filter: blur(12px);
+      min-height: 218px;
+    }
+    .event h3 {
+      font-family: Georgia, serif;
+      color: #ffe29a;
+      font-size: 27px;
+      line-height: 1.08;
+    }
+    .event p { color: rgba(255,255,255,.82); margin: 14px 0 0; }
+    .catering-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 34px; }
+
+    .franchise-strip {
+      background: #fff7e8;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+    .franchise-panel {
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 34px;
+      align-items: center;
+      padding: 42px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background:
+        linear-gradient(135deg, rgba(243,183,42,.28), rgba(255,250,240,.7)),
+        var(--paper);
+      box-shadow: var(--shadow);
+    }
+    .franchise-panel h2 { max-width: 760px; }
+    .franchise-points {
+      display: grid;
+      gap: 12px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .franchise-points li {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      color: #41372e;
+      font-weight: 750;
+    }
+    .franchise-points li:before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      flex: 0 0 auto;
+      margin-top: 7px;
+      border-radius: 50%;
+      background: var(--red);
+      box-shadow: 0 0 0 4px rgba(183,53,36,.12);
+    }
+    .franchise-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 26px;
+    }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+    .review { padding: 24px; }
+    .stars { color: var(--red); letter-spacing: 2px; font-size: 13px; }
+    .review p {
+      margin: 14px 0 18px;
+      color: #332d27;
+      font-weight: 650;
+    }
+    .review strong { color: var(--blue); }
+    .rating-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 28px;
+      color: var(--muted);
+      font-weight: 800;
+    }
+    .rating-row b { color: var(--red-dark); font-size: 24px; font-family: Georgia, serif; }
+
+    .visit {
+      background: var(--blue);
+      color: white;
+    }
+    .visit-grid {
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: 42px;
+      align-items: stretch;
+    }
+    .visit h2 { color: white; }
+    .visit .lead { color: rgba(255,255,255,.76); }
+    .info {
+      display: grid;
+      gap: 18px;
+      margin-top: 28px;
+    }
+    .info div {
+      padding-top: 18px;
+      border-top: 1px solid rgba(255,255,255,.18);
+    }
+    .info small {
+      display: block;
+      color: #ffe29a;
+      font-weight: 900;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+    .map {
+      min-height: 430px;
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,.2);
+      box-shadow: var(--shadow);
+      background: var(--soft);
+    }
+    .map iframe { width: 100%; height: 100%; border: 0; display: block; }
+
+    footer {
+      padding: 34px 0;
+      background: #120f0d;
+      color: rgba(255,255,255,.68);
+    }
+    .foot {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      align-items: center;
+      flex-wrap: wrap;
+      font-size: 14px;
+    }
+    .foot strong { color: white; }
+    .foot-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .fab {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 30;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: #1f9d5b;
+      color: white;
+      box-shadow: 0 14px 32px rgba(19,138,88,.36);
+    }
+
+    @media (max-width: 920px) {
+      .links { display: none; }
+      .icon-btn { display: inline-flex; }
+      .nav .btn span { display: none; }
+      .nav .btn { width: 42px; padding: 0; }
+      .mobile-menu.open { display: block; }
+      .hero { min-height: auto; background-position: 65% center; }
+      .hero .wrap { padding: 88px 0 42px; }
+      .hero-meta { grid-template-columns: repeat(2, 1fr); }
+      .audience-grid, .story-grid, .menu-layout, .event-grid, .reviews-grid, .visit-grid, .franchise-panel {
+        grid-template-columns: 1fr;
+      }
+      .menu-card { position: static; }
+      .map { min-height: 340px; }
+    }
+
+    @media (max-width: 620px) {
+      .wrap { width: min(100% - 28px, 1160px); }
+      .brand strong { font-size: 16px; max-width: 205px; }
+      .brand span:last-child { font-size: 10px; }
+      .mark { width: 38px; height: 38px; }
+      section { padding: 66px 0; }
+      .hero {
+        background:
+          linear-gradient(180deg, rgba(25,22,19,.86) 0%, rgba(25,22,19,.58) 55%, rgba(25,22,19,.9) 100%),
+          url("assets/chaat-hero.png") 68% center / cover no-repeat;
+      }
+      .hero .wrap { width: min(100% - 28px, 1160px); padding: 78px 0 32px; }
+      h1 { font-size: clamp(40px, 14vw, 64px); }
+      .hero p { font-size: 16px; }
+      .hero-actions, .catering-actions, .franchise-actions { flex-direction: column; }
+      .hero-actions .btn, .catering-actions .btn, .franchise-actions .btn { width: 100%; }
+      .hero-meta { grid-template-columns: 1fr 1fr; margin-top: 36px; }
+      .hero-meta div { padding: 15px 12px; }
+      .hero-meta strong { font-size: 23px; }
+      .hero-meta span { font-size: 10px; }
+      .audience-card { min-height: auto; }
+      .proof-board { padding: 24px 18px; border-width: 6px; }
+      .proof-list li { display: block; }
+      .items { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .dish-strip { grid-template-columns: 1fr; }
+      .item { font-size: 14px; }
+      .review, .event, .audience-card, .menu-card { padding: 22px; }
+      .franchise-panel { padding: 24px; }
+      .item { grid-template-rows: 108px auto; }
+      .item:before { min-height: 108px; }
+      .fab { width: 52px; height: 52px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#" aria-label="Sri Annapoorneshwari Chat home">
+        <span class="mark">SA</span>
+        <span>
+          <strong>Sri Annapoorneshwari Chat</strong>
+          <span>Cubbonpet · Bengaluru</span>
+        </span>
+      </a>
+      <nav class="links" aria-label="Primary navigation">
+        <a href="#customers">Customers</a>
+        <a href="#story">Story</a>
+        <a href="#menu">Menu</a>
+        <a href="#catering">Catering</a>
+        <a href="franchise.html">Franchise</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#visit">Visit</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="social-icon" href="https://www.instagram.com/sriannapoorneshwarichat/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg>
+        </a>
+        <a class="social-icon whatsapp" href="https://wa.me/919113982426?text=Namaste!%20I%20would%20like%20to%20enquire%20about%20Sri%20Annapoorneshwari%20Chat." target="_blank" rel="noopener" aria-label="WhatsApp Sri Annapoorneshwari Chat">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.33 4.95L2 22l5.29-1.39a9.86 9.86 0 0 0 4.75 1.21h.01c5.46 0 9.91-4.44 9.91-9.9A9.92 9.92 0 0 0 12.04 2Zm5.78 14.17c-.25.71-1.47 1.36-2.03 1.4-.52.04-1.17.06-1.89-.12-.44-.11-1-.32-1.72-.63-3.02-1.3-4.99-4.33-5.14-4.53-.15-.2-1.23-1.63-1.23-3.11s.78-2.21 1.06-2.51c.27-.3.6-.38.8-.38h.58c.18.01.44-.07.69.53.25.6.86 2.08.94 2.24.07.15.12.33.02.53-.1.2-.15.32-.3.49-.15.18-.32.39-.46.52-.15.15-.31.31-.13.61.17.3.76 1.25 1.64 2.03 1.13 1 2.08 1.31 2.38 1.46.3.15.47.13.65-.08.17-.2.75-.87.95-1.17.2-.3.4-.25.68-.15.28.1 1.78.84 2.08.99.3.15.5.23.58.35.07.13.07.73-.18 1.44Z"/></svg>
+        </a>
+        <button class="icon-btn" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="wrap mobile-menu" id="mobileMenu">
+      <a href="#customers">Customers</a>
+      <a href="#story">Story</a>
+      <a href="#menu">Menu</a>
+      <a href="#catering">Catering</a>
+      <a href="franchise.html">Franchise</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#visit">Visit</a>
+      <a href="https://www.instagram.com/sriannapoorneshwarichat/" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div class="eyebrow">15 years of chaat expertise</div>
+        <h1>Clean, classic Bengaluru chats for everyday cravings and grand occasions.</h1>
+        <p>Sri Annapoorneshwari Chat serves affordable vegetarian street food from Cubbonpet, with catering for individual orders, corporate events, and marriage functions.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#catering">Plan an Event</a>
+          <a class="btn outline" href="#menu">View Menu</a>
+        </div>
+        <div class="hero-meta" aria-label="Highlights">
+          <div><strong>4.7</strong><span>Google rating</span></div>
+          <div><strong>53</strong><span>Reviews</span></div>
+          <div><strong>₹1-200</strong><span>Popular range</span></div>
+          <div><strong>15 yrs</strong><span>Experience</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="audience" id="customers">
+      <div class="wrap">
+        <div class="section-head center">
+          <div class="eyebrow">Built for every order size</div>
+          <h2>From one plate at the counter to a full event spread.</h2>
+          <p class="lead">The same taste and hygiene standards carry across walk-in snacks, office gatherings, and family celebrations.</p>
+        </div>
+        <div class="audience-grid">
+          <article class="audience-card">
+            <div>
+              <small>For individuals</small>
+              <h3>Quick, fresh chats for daily cravings.</h3>
+              <p>Stop by for bhel puri, nippat masala, sprouts masala, dahi chats, bun masala, and more, mixed fresh when you order.</p>
+            </div>
+            <div class="mini-list"><span>Dine in</span><span>Takeaway</span><span>Budget friendly</span></div>
+          </article>
+          <article class="audience-card">
+            <div>
+              <small>For corporates</small>
+              <h3>Office snacks and live counters.</h3>
+              <p>Serve clean, fast, crowd-friendly chaat for team lunches, office parties, launches, workshops, and evening snacks.</p>
+            </div>
+            <div class="mini-list"><span>Bulk plates</span><span>Live counter</span><span>Custom menu</span></div>
+          </article>
+          <article class="audience-card">
+            <div>
+              <small>For marriages</small>
+              <h3>Traditional chaat counters for celebrations.</h3>
+              <p>Add a lively vegetarian counter to weddings, engagements, receptions, housewarmings, and family functions.</p>
+            </div>
+            <div class="mini-list"><span>Guest planning</span><span>Multiple items</span><span>Venue service</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="story">
+      <div class="wrap story-grid">
+        <div class="proof-board">
+          <h3>Sri Annapoorneshwari Chat</h3>
+          <p>Cubbonpet Main Road · Vegetarian Fast Food</p>
+          <ul class="proof-list">
+            <li><span>Known for</span><span>Dry chats & masalas</span></li>
+            <li><span>Customer love</span><span>4.7 from 53 reviews</span></li>
+            <li><span>Experience</span><span>15 years</span></li>
+            <li><span>Events</span><span>Corporate & marriage catering</span></li>
+          </ul>
+        </div>
+        <div class="story-copy">
+          <div class="eyebrow">Trusted local name</div>
+          <h2>A Cubbonpet favourite with a serious eye for hygiene.</h2>
+          <p>The shop is loved for crisp puris, generous masalas, affordable pricing, and a clean counter experience. Reviews repeatedly call out hygiene, taste, and friendly service.</p>
+          <p>With 15 years of expertise, Sri Annapoorneshwari Chat has grown from daily walk-in plates to handling larger event orders without losing the freshness and speed of a classic Bengaluru chaat counter.</p>
+          <div class="spotlight">Honoured by visits from public figures including an MLA and Sihi Kahi Chandru, a well-known Kannada actor and food personality.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu" id="menu">
+      <div class="wrap menu-layout">
+        <aside class="menu-card">
+          <div class="eyebrow">Menu board</div>
+          <h3>Signature plates, event favourites, and dry chat specials.</h3>
+          <p>Menu adapted from the provided item-board photo and public review highlights. Prices are indicative and can be confirmed directly for event orders.</p>
+          <a class="btn dark" href="https://wa.me/919113982426?text=Namaste!%20Please%20share%20the%20current%20menu%20and%20prices." target="_blank" rel="noopener">Ask for Current Menu</a>
+          <div class="dish-strip" aria-label="Featured chaat visuals">
+            <div class="dish">Bhel Puri</div>
+            <div class="dish">Nippat Masala</div>
+            <div class="dish">Dahi Chats</div>
+            <div class="dish">Event Counter</div>
+          </div>
+        </aside>
+        <div>
+          <div class="menu-group">
+            <h3>Most Loved</h3>
+            <div class="items">
+              <div class="item img-bhel"><strong>Bhel Puri <span>₹40+</span></strong></div>
+              <div class="item img-tikki"><strong>Tikki Puri <span>₹40+</span></strong></div>
+              <div class="item img-sprouts"><strong>Sprouts Masala <span>₹50+</span></strong></div>
+              <div class="item img-nippat"><strong>Boti Masala <span>₹50+</span></strong></div>
+              <div class="item img-corn"><strong>Sweet Corn Masala <span>₹50+</span></strong></div>
+              <div class="item img-pineapple"><strong>Pineapple Bhel Puri <span>₹50+</span></strong></div>
+            </div>
+          </div>
+          <div class="menu-group">
+            <h3>Dry Chat & Masala Specials</h3>
+            <div class="items">
+              <div class="item img-nippat"><strong>Nippat Masala <span>₹40+</span></strong></div>
+              <div class="item img-bun"><strong>Bun Nippat Masala <span>₹60+</span></strong></div>
+              <div class="item img-nippat"><strong>Kodbale Masala <span>₹40+</span></strong></div>
+              <div class="item img-nippat"><strong>Kurkure Masala <span>₹50+</span></strong></div>
+              <div class="item img-nippat"><strong>Congress Masala <span>₹50+</span></strong></div>
+              <div class="item img-bhel"><strong>3 in 1 Masala <span>₹60+</span></strong></div>
+              <div class="item img-nippat"><strong>Time Pass Masala <span>₹40+</span></strong></div>
+              <div class="item img-nippat"><strong>Onion Chakli Masala <span>₹50+</span></strong></div>
+            </div>
+          </div>
+          <div class="menu-group">
+            <h3>Bun, Dahi & Sides</h3>
+            <div class="items">
+              <div class="item img-bun"><strong>Bun Masala <span>₹60+</span></strong></div>
+              <div class="item img-pineapple"><strong>Bun Pineapple Masala <span>₹60+</span></strong></div>
+              <div class="item img-dahi"><strong>Dahi Tikki Puri <span>₹50+</span></strong></div>
+              <div class="item img-dahi"><strong>Dahi Nippat Masala <span>₹50+</span></strong></div>
+              <div class="item img-dahi"><strong>Dahi Kodbale Masala <span>₹50+</span></strong></div>
+              <div class="item img-sprouts"><strong>Tomato Slice <span>₹40+</span></strong></div>
+              <div class="item img-sprouts"><strong>Cucumber Slice Masala <span>₹40+</span></strong></div>
+              <div class="item img-nippat"><strong>Chips Masala <span>₹40+</span></strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="catering" id="catering">
+      <div class="wrap">
+        <div class="eyebrow">Catering & events</div>
+        <h2>Classy chaat service for corporate events, marriages, and family functions.</h2>
+        <p class="lead">Choose a compact snack menu or a full live counter. The team can recommend items based on guest count, spice preference, serving style, and budget.</p>
+        <div class="event-grid">
+          <article class="event">
+            <h3>Corporate Events</h3>
+            <p>Ideal for office lunches, festive celebrations, client meets, team snacks, and packed plate distribution.</p>
+          </article>
+          <article class="event">
+            <h3>Marriage Functions</h3>
+            <p>Live vegetarian chaat counters for weddings, receptions, engagements, housewarming events, and family gatherings.</p>
+          </article>
+          <article class="event">
+            <h3>Custom Bulk Orders</h3>
+            <p>Pick crowd favourites like bhel puri, nippat masala, dahi chats, sweet corn masala, and bun specials.</p>
+          </article>
+        </div>
+        <div class="catering-actions">
+          <a class="btn primary" href="https://wa.me/919113982426?text=Namaste!%20I%20want%20to%20discuss%20catering%20for%20an%20event." target="_blank" rel="noopener">Get Catering Quote</a>
+          <a class="btn outline" href="tel:+919113982426">Call Now</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="franchise-strip" id="franchise">
+      <div class="wrap">
+        <div class="franchise-panel">
+          <div>
+            <div class="eyebrow">Franchise opportunity</div>
+            <h2>Learn the craft of delicious chaat and build with a trusted Cubbonpet name.</h2>
+            <p class="lead">For serious food entrepreneurs, Sri Annapoorneshwari Chat can share the operating style behind its 15-year journey: recipes, counter discipline, hygiene practices, sourcing basics, and customer service habits.</p>
+            <div class="franchise-actions">
+              <a class="btn primary" href="franchise.html">Explore Franchise Page</a>
+              <a class="btn outline" href="mailto:?subject=Franchise%20enquiry%20-%20Sri%20Annapoorneshwari%20Chat&body=Namaste%2C%0A%0AI%20am%20interested%20in%20learning%20more%20about%20Sri%20Annapoorneshwari%20Chat%20franchise%20opportunities.%0A%0AName%3A%0ACity%3A%0APhone%3A%0AExperience%20in%20food%20business%3A%0A%0AThank%20you.">Send Enquiry Email</a>
+            </div>
+          </div>
+          <ul class="franchise-points">
+            <li>Hands-on training for core chats, masalas, prep flow, and serving rhythm.</li>
+            <li>Guidance on setting up a compact, clean, efficient vegetarian chaat counter.</li>
+            <li>Support for menu planning, launch readiness, and maintaining consistent taste.</li>
+            <li>Best suited for owners who will personally care about hygiene and daily operations.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews">
+      <div class="wrap">
+        <div class="section-head center">
+          <div class="eyebrow">Google reviews</div>
+          <h2>People come back for taste, hygiene, and value.</h2>
+        </div>
+        <div class="reviews-grid">
+          <article class="review">
+            <div class="stars">★★★★★</div>
+            <p>“Hygiene food. Affordable rate. Service is excellent.”</p>
+            <strong>Bharath M</strong>
+          </article>
+          <article class="review">
+            <div class="stars">★★★★★</div>
+            <p>“Sprouts masala is awesome.”</p>
+            <strong>Rahul Gogoi</strong>
+          </article>
+          <article class="review">
+            <div class="stars">★★★★★</div>
+            <p>“Located in Cubbonpet main road, dry chats served here are mouth watering. Must try Boti Masala, Tikki Puri.”</p>
+            <strong>Ganesh Darshan</strong>
+          </article>
+        </div>
+        <div class="rating-row">
+          <b>4.7/5</b>
+          <span>Based on 53 Google reviews</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="visit" id="visit">
+      <div class="wrap visit-grid">
+        <div>
+          <div class="eyebrow">Visit or enquire</div>
+          <h2>Cubbonpet Main Road, Bengaluru.</h2>
+          <p class="lead">Drop in for a quick plate or message the shop for corporate and marriage event orders.</p>
+          <div class="info">
+            <div>
+              <small>Address</small>
+              Sri Annapoorneshwari Chat<br>Cubbonpet Main Road, Bengaluru, Karnataka
+            </div>
+            <div>
+              <small>Order & enquiries</small>
+              <a href="tel:+919113982426">+91 91139 82426</a><br>
+              <a href="https://wa.me/919113982426" target="_blank" rel="noopener">WhatsApp the shop</a><br>
+              <a href="https://www.instagram.com/sriannapoorneshwarichat/" target="_blank" rel="noopener">Follow on Instagram</a>
+            </div>
+            <div>
+              <small>Best for</small>
+              Walk-ins · Takeaway · Corporate events · Marriage catering
+            </div>
+          </div>
+        </div>
+        <div class="map">
+          <iframe title="Sri Annapoorneshwari Chat map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Sri%20Annapoorneshwari%20Chat%20Cubbonpet%20Bengaluru&output=embed"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <div><strong>Sri Annapoorneshwari Chat</strong> · Cubbonpet, Bengaluru</div>
+      <div class="foot-actions">
+        <span>© <span id="year"></span> · Vegetarian chats and <a href="franchise.html">franchise enquiries</a></span>
+        <a class="social-icon" href="https://www.instagram.com/sriannapoorneshwarichat/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <a class="fab" href="https://wa.me/919113982426?text=Namaste!%20I%20would%20like%20to%20place%20an%20order." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.33 4.95L2 22l5.29-1.39a9.86 9.86 0 0 0 4.75 1.21h.01c5.46 0 9.91-4.44 9.91-9.9A9.92 9.92 0 0 0 12.04 2Zm5.78 14.17c-.25.71-1.47 1.36-2.03 1.4-.52.04-1.17.06-1.89-.12-.44-.11-1-.32-1.72-.63-3.02-1.3-4.99-4.33-5.14-4.53-.15-.2-1.23-1.63-1.23-3.11s.78-2.21 1.06-2.51c.27-.3.6-.38.8-.38h.58c.18.01.44-.07.69.53.25.6.86 2.08.94 2.24.07.15.12.33.02.53-.1.2-.15.32-.3.49-.15.18-.32.39-.46.52-.15.15-.31.31-.13.61.17.3.76 1.25 1.64 2.03 1.13 1 2.08 1.31 2.38 1.46.3.15.47.13.65-.08.17-.2.75-.87.95-1.17.2-.3.4-.25.68-.15.28.1 1.78.84 2.08.99.3.15.5.23.58.35.07.13.07.73-.18 1.44Z"/></svg>
+  </a>
+
+  <script>
+    const toggle = document.getElementById("menuToggle");
+    const menu = document.getElementById("mobileMenu");
+    const year = document.getElementById("year");
+    year.textContent = new Date().getFullYear();
+    toggle.addEventListener("click", () => {
+      const open = menu.classList.toggle("open");
+      toggle.setAttribute("aria-expanded", String(open));
+      toggle.innerHTML = open
+        ? '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>'
+        : '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>';
+    });
+    menu.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        menu.classList.remove("open");
+        toggle.setAttribute("aria-expanded", "false");
+        toggle.innerHTML = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>';
+      });
+    });
+  </script>
+</body>
+</html>
