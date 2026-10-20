@@ -36,6 +36,7 @@
       --green: #138a58;
       --blue: #163a66;
       --btn-blue: #1d5bb0;
+      --btn-text: #0e2847;
       --btn-blue-dark: #16488c;
       --btn-blue-bright: #3f8ae8;
       --shadow: 0 22px 60px rgba(45, 31, 19, .16);
@@ -188,8 +189,12 @@
       transition: transform .18s ease, background .18s ease, color .18s ease;
     }
     .btn:hover { transform: translateY(-1px); }
-    .primary { background: var(--btn-blue); color: white; }
-    .primary:hover { background: var(--btn-blue-dark); }
+    .primary {
+      background: #ffffff;
+      color: var(--btn-text);
+      border-color: rgba(14, 40, 71, .14);
+    }
+    .primary:hover { background: #e8f0fb; color: var(--btn-text); }
     .dark { background: var(--ink); color: var(--saffron); }
     .dark:hover { background: var(--blue); }
     .outline { border-color: rgba(25, 22, 19, .28); color: var(--ink); background: rgba(255,255,255,.48); }
@@ -594,8 +599,7 @@
     .contact-actions { display: grid; gap: 12px; margin-top: 22px; }
     .contact-actions .outline { color: white; border-color: rgba(255,255,255,.38); background: rgba(255,255,255,.10); }
     .contact-actions .outline:hover { background: white; color: var(--blue); }
-    .contact-box .primary { background: var(--btn-blue-bright); color: #06203f; }
-    .contact-box .primary:hover { background: #ffffff; color: var(--blue); }
+
 
     footer {
       padding: 56px 0 88px; /* bottom clearance so the floating WhatsApp button never covers the credit */
