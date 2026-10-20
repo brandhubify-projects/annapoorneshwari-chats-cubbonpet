@@ -5,6 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Franchise | Sri Annapoorneshwari Chat</title>
   <meta name="description" content="Franchise enquiry page for Sri Annapoorneshwari Chat. Learn about the process, training, history, and how to enquire.">
+  <link rel="canonical" href="https://brandhubify-projects.github.io/annapoorneshwari-chats-cubbonpet/franchise.html">
+  <meta property="og:type" content="restaurant">
+  <meta property="og:site_name" content="Sri Annapoorneshwari Chat">
+  <meta property="og:title" content="Franchise Enquiry | Sri Annapoorneshwari Chat">
+  <meta property="og:description" content="Learn the craft behind a 25-year Cubbonpet chaat counter — recipes, hygiene practices, sourcing and daily operations.">
+  <meta property="og:url" content="https://brandhubify-projects.github.io/annapoorneshwari-chats-cubbonpet/franchise.html">
+  <meta property="og:image" content="https://brandhubify-projects.github.io/annapoorneshwari-chats-cubbonpet/assets/real/cucumber.jpg">
+  <meta property="og:image:alt" content="Freshly mixed chaat served on a banana leaf at Sri Annapoorneshwari Chat, Cubbonpet">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Franchise Enquiry | Sri Annapoorneshwari Chat">
+  <meta name="twitter:description" content="Learn the craft behind a 25-year Cubbonpet chaat counter — recipes, hygiene practices, sourcing and daily operations.">
+  <meta name="twitter:image" content="https://brandhubify-projects.github.io/annapoorneshwari-chats-cubbonpet/assets/real/cucumber.jpg">
+  <meta name="theme-color" content="#b73524">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
   <style>
     :root {
       --ink: #191613;
@@ -15,17 +31,29 @@
       --red: #b73524;
       --red-dark: #842416;
       --saffron: #f3b72a;
+      --gold: #e3b24a;
+      --gold-bright: #f5c860;
       --green: #138a58;
       --blue: #163a66;
+      --btn-blue: #1d5bb0;
+      --btn-blue-dark: #16488c;
+      --btn-blue-bright: #3f8ae8;
       --shadow: 0 22px 60px rgba(45, 31, 19, .16);
       --radius: 8px;
     }
 
     * { box-sizing: border-box; }
+    /* Typography matched to terrarco.com (Inter, tight display tracking) */
+    h1 { font-weight: 700; letter-spacing: -.028em; }
+    h2 { font-weight: 700; letter-spacing: -.022em; }
+    h3 { font-weight: 650; letter-spacing: -.014em; }
+    blockquote { letter-spacing: -.018em; }
+    strong, b { font-weight: 650; }
+
     html { scroll-behavior: smooth; }
     body {
       margin: 0;
-      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
       color: var(--ink);
       background: var(--paper);
       line-height: 1.55;
@@ -54,7 +82,10 @@
       align-items: center;
       gap: 12px;
       min-width: 0;
+      flex: 1 1 auto;
+      overflow: hidden;
     }
+    .brand > span { min-width: 0; }
     .mark {
       width: 44px;
       height: 44px;
@@ -64,14 +95,14 @@
       flex: 0 0 auto;
       background: var(--red);
       color: #ffe29a;
-      font-family: Georgia, serif;
+      font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
       font-weight: 700;
       border: 2px solid var(--saffron);
     }
     .brand strong {
       display: block;
       color: var(--red-dark);
-      font-family: Georgia, "Times New Roman", serif;
+      font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
       font-size: 18px;
       line-height: 1.05;
       white-space: nowrap;
@@ -95,7 +126,7 @@
       font-weight: 750;
     }
     .links a:hover { color: var(--red); }
-    .nav-actions { display: flex; align-items: center; gap: 10px; }
+    .nav-actions { display: flex; align-items: center; gap: 10px; flex: 0 0 auto; }
     .social-icon {
       width: 44px;
       height: 44px;
@@ -132,8 +163,8 @@
       transition: transform .18s ease, background .18s ease, color .18s ease;
     }
     .btn:hover { transform: translateY(-1px); }
-    .primary { background: var(--red); color: white; }
-    .primary:hover { background: var(--red-dark); }
+    .primary { background: var(--btn-blue); color: white; }
+    .primary:hover { background: var(--btn-blue-dark); }
     .dark { background: var(--ink); color: var(--saffron); }
     .dark:hover { background: var(--blue); }
     .outline { border-color: rgba(25, 22, 19, .28); color: var(--ink); background: rgba(255,255,255,.48); }
@@ -145,7 +176,7 @@
       color: white;
       background:
         linear-gradient(90deg, rgba(25,22,19,.92) 0%, rgba(25,22,19,.76) 44%, rgba(25,22,19,.18) 100%),
-        url("assets/chaat-hero.png") center / cover no-repeat;
+        image-set(url("assets/chaat-hero.webp") type("image/webp"), url("assets/chaat-hero.jpg") type("image/jpeg")) center / cover no-repeat;
     }
     .hero .wrap { padding: 96px 0 72px; }
     .eyebrow {
@@ -167,11 +198,11 @@
     }
     h1, h2, h3 { margin: 0; }
     h1 {
-      max-width: 850px;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(44px, 7vw, 86px);
-      line-height: .96;
-      letter-spacing: 0;
+      max-width: 880px;
+      font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      font-size: clamp(32px, 4.4vw, 56px);
+      line-height: 1.06;
+      letter-spacing: -.028em;
     }
     .hero p {
       max-width: 640px;
@@ -199,7 +230,7 @@
     .hero-stats strong {
       display: block;
       color: #ffe29a;
-      font-family: Georgia, serif;
+      font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
       font-size: 28px;
       line-height: 1;
     }
@@ -218,7 +249,7 @@
     .center { text-align: center; margin-left: auto; margin-right: auto; }
     h2 {
       color: var(--red-dark);
-      font-family: Georgia, "Times New Roman", serif;
+      font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
       font-size: clamp(32px, 4.7vw, 56px);
       line-height: 1.03;
     }
@@ -249,7 +280,7 @@
     .card h3 {
       margin-top: 14px;
       color: var(--blue);
-      font-family: Georgia, serif;
+      font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
       font-size: 28px;
       line-height: 1.08;
     }
@@ -263,23 +294,27 @@
       align-items: start;
     }
     .board {
-      background: #f5c338;
-      border: 8px solid var(--red);
+      background:
+        radial-gradient(120% 90% at 50% 0%, rgba(227,178,74,.16), transparent 62%),
+        linear-gradient(168deg, #262220 0%, #181513 55%, #100e0c 100%);
+      border: 6px solid var(--gold);
       border-radius: var(--radius);
       padding: 32px;
-      box-shadow: var(--shadow);
+      box-shadow: 0 24px 60px rgba(20, 14, 8, .42), inset 0 0 0 1px rgba(245,200,96,.18);
       transform: rotate(-.45deg);
     }
     .board h3 {
-      color: var(--red-dark);
-      font-family: Georgia, serif;
+      color: var(--gold-bright);
+      font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
       font-size: clamp(30px, 4vw, 46px);
       line-height: 1;
       text-align: center;
+      text-shadow: 0 1px 0 rgba(0,0,0,.45);
     }
     .board p {
-      color: #17375e;
-      font-weight: 850;
+      color: rgba(255, 244, 222, .74);
+      font-weight: 750;
+      letter-spacing: .04em;
       text-align: center;
       margin: 16px 0 0;
     }
@@ -291,10 +326,19 @@
       list-style: none;
     }
     .checklist li {
-      padding: 12px 0;
-      border-top: 1px dashed rgba(132,36,22,.4);
-      color: #17375e;
-      font-weight: 850;
+      position: relative;
+      padding: 12px 0 12px 26px;
+      border-top: 1px dashed rgba(227, 178, 74, .32);
+      color: rgba(255, 248, 235, .92);
+      font-weight: 700;
+    }
+    .checklist li:before {
+      content: "\2713";
+      position: absolute;
+      left: 0;
+      top: 12px;
+      color: var(--gold);
+      font-weight: 900;
     }
     .story p {
       color: var(--muted);
@@ -322,7 +366,7 @@
       padding: 30px;
       background:
         linear-gradient(180deg, rgba(25,22,19,.08), rgba(25,22,19,.72)),
-        url("assets/chaat-hero.png") center / cover no-repeat;
+        image-set(url("assets/chaat-hero.webp") type("image/webp"), url("assets/chaat-hero.jpg") type("image/jpeg")) center / cover no-repeat;
       color: white;
       min-height: 440px;
       display: flex;
@@ -332,7 +376,7 @@
     }
     .founder-card h3 {
       color: #ffe29a;
-      font-family: Georgia, serif;
+      font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
       font-size: 34px;
       line-height: 1.05;
     }
@@ -353,7 +397,7 @@
     .journey-list strong {
       display: block;
       color: var(--blue);
-      font-family: Georgia, serif;
+      font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
       font-size: 23px;
       margin-bottom: 6px;
     }
@@ -389,7 +433,7 @@
       fill: #17375e;
       font-size: 18px;
       font-weight: 850;
-      font-family: ui-sans-serif, system-ui, sans-serif;
+      font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
     }
     .growth-points {
       display: grid;
@@ -406,7 +450,7 @@
     .growth-point strong {
       display: block;
       color: var(--red-dark);
-      font-family: Georgia, serif;
+      font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
       font-size: 22px;
       line-height: 1.08;
       margin-bottom: 8px;
@@ -434,14 +478,14 @@
       content: counter(step, decimal-leading-zero);
       display: block;
       color: var(--red);
-      font-family: Georgia, serif;
+      font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
       font-size: 34px;
       line-height: 1;
       margin-bottom: 18px;
     }
     .step h3 {
       color: var(--blue);
-      font-family: Georgia, serif;
+      font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
       font-size: 24px;
       line-height: 1.08;
     }
@@ -464,7 +508,7 @@
     }
     .training-card h3 {
       color: #ffe29a;
-      font-family: Georgia, serif;
+      font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
       font-size: 27px;
     }
     .training-card p { color: rgba(255,255,255,.82); margin: 12px 0 0; }
@@ -509,35 +553,78 @@
     }
     .contact-box {
       border-radius: var(--radius);
-      background: var(--red-dark);
+      background:
+        radial-gradient(120% 110% at 100% 0%, rgba(243,183,42,.15), transparent 58%),
+        linear-gradient(155deg, #1d4779 0%, var(--blue) 54%, #102a4b 100%);
       color: white;
       padding: 28px;
     }
     .contact-box h3 {
       color: #ffe29a;
-      font-family: Georgia, serif;
+      font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
       font-size: 30px;
       line-height: 1.08;
     }
     .contact-box p { color: rgba(255,255,255,.78); }
     .contact-actions { display: grid; gap: 12px; margin-top: 22px; }
-    .contact-actions .outline { color: white; border-color: rgba(255,255,255,.38); }
-    .contact-actions .outline:hover { background: white; color: var(--red-dark); }
+    .contact-actions .outline { color: white; border-color: rgba(255,255,255,.38); background: rgba(255,255,255,.10); }
+    .contact-actions .outline:hover { background: white; color: var(--blue); }
+    .contact-box .primary { background: var(--btn-blue-bright); color: #06203f; }
+    .contact-box .primary:hover { background: #ffffff; color: var(--blue); }
 
     footer {
-      padding: 34px 0;
+      padding: 56px 0 88px; /* bottom clearance so the floating WhatsApp button never covers the credit */
       background: #120f0d;
-      color: rgba(255,255,255,.68);
+      color: rgba(255,255,255,.62);
     }
     .foot {
       display: flex;
       justify-content: space-between;
-      gap: 20px;
-      align-items: center;
+      gap: 32px;
+      align-items: flex-start;
       flex-wrap: wrap;
       font-size: 14px;
+      padding-bottom: 30px;
     }
-    .foot strong { color: white; }
+    .foot-brand strong {
+      display: block;
+      color: white;
+      font-size: 19px;
+      letter-spacing: -.02em;
+      margin-bottom: 7px;
+    }
+    .foot-brand span { display: block; max-width: 440px; line-height: 1.6; }
+    .foot-contact { display: grid; gap: 10px; justify-items: end; text-align: right; }
+    .foot-contact a { color: rgba(255,255,255,.74); }
+    .foot-contact a:hover { color: white; }
+    .foot-contact .num {
+      color: white;
+      font-size: 19px;
+      font-weight: 650;
+      letter-spacing: -.01em;
+    }
+    /* icons must not inherit the light-header treatment on a dark footer */
+    footer .social-icon {
+      background: rgba(255,255,255,.07);
+      border-color: rgba(255,255,255,.17);
+      color: rgba(255,255,255,.82);
+    }
+    footer .social-icon:hover { background: white; color: #120f0d; }
+    .foot-base {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      padding-top: 22px;
+      border-top: 1px solid rgba(255,255,255,.11);
+      font-size: 13px;
+      color: rgba(255,255,255,.45);
+    }
+    .foot-base strong { color: rgba(255,255,255,.82); font-weight: 650; }
+    .foot-base a { color: rgba(255,255,255,.62); }
+    .foot-base a:hover { color: white; }
+
     .foot-actions {
       display: flex;
       align-items: center;
@@ -559,10 +646,10 @@
       .hero {
         background:
           linear-gradient(180deg, rgba(25,22,19,.88) 0%, rgba(25,22,19,.66) 56%, rgba(25,22,19,.92) 100%),
-          url("assets/chaat-hero.png") 68% center / cover no-repeat;
+          image-set(url("assets/chaat-hero.webp") type("image/webp"), url("assets/chaat-hero.jpg") type("image/jpeg")) 68% center / cover no-repeat;
       }
       .hero .wrap { padding: 78px 0 42px; }
-      h1 { font-size: clamp(40px, 14vw, 64px); }
+      h1 { font-size: clamp(29px, 7.6vw, 38px); line-height: 1.1; }
       section { padding: 64px 0; }
       .actions { flex-direction: column; }
       .actions .btn { width: 100%; }
@@ -606,14 +693,14 @@
       <div class="wrap">
         <div class="eyebrow">Franchise with flavour</div>
         <h1>Bring Sri Annapoorneshwari Chat’s Cubbonpet taste to a new neighbourhood.</h1>
-        <p>For committed owners who want to learn delicious chaat the right way: fresh prep, clean counter habits, fast service, and recipes shaped by 15 years of customer love.</p>
+        <p>For committed owners who want to learn delicious chaat the right way: fresh prep, clean counter habits, fast service, and recipes shaped by 25 years of customer love.</p>
         <div class="actions">
           <a class="btn primary" href="https://wa.me/919113982426?text=Namaste!%20I%20am%20interested%20in%20Sri%20Annapoorneshwari%20Chat%20franchise%20opportunities." target="_blank" rel="noopener">WhatsApp Enquiry</a>
           <a class="btn primary" href="#enquiry">Send Franchise Enquiry</a>
           <a class="btn outline" href="tel:+919113982426">Call to Discuss</a>
         </div>
         <div class="hero-stats">
-          <div><strong>15 yrs</strong><span>Operating know-how</span></div>
+          <div><strong>25 yrs</strong><span>Operating know-how</span></div>
           <div><strong>4.7</strong><span>Google rating</span></div>
           <div><strong>Veg</strong><span>Focused chaat format</span></div>
         </div>
@@ -650,7 +737,7 @@
     <section class="history" id="history">
       <div class="wrap history-grid">
         <div class="board">
-          <h3>15 Years of Chaat Craft</h3>
+          <h3>25 Years of Chaat Craft</h3>
           <p>Cubbonpet Main Road · Bengaluru</p>
           <ul class="checklist">
             <li>Affordable vegetarian street food</li>
@@ -713,7 +800,7 @@
           </svg>
         </div>
         <div>
-          <div class="eyebrow">Karnataka first, India next</div>
+          <div class="eyebrow">Started in Karnataka</div>
           <h2>A serious growth plan needs more than great taste.</h2>
           <p class="lead">The first expansion story can stay rooted in Karnataka: Bengaluru credibility, nearby city pilots, and a training system that becomes strong before scaling wider.</p>
           <div class="growth-points">
@@ -812,15 +899,30 @@
 
   <footer>
     <div class="wrap foot">
-      <div><strong>Sri Annapoorneshwari Chat</strong> · Franchise enquiries</div>
-      <div class="foot-actions">
-        <a href="index.html">Back to main website</a>
-        <a class="btn primary" href="https://wa.me/919113982426?text=Namaste!%20I%20am%20interested%20in%20Sri%20Annapoorneshwari%20Chat%20franchise%20opportunities." target="_blank" rel="noopener">WhatsApp Enquiry</a>
-        <a class="social-icon" href="https://www.instagram.com/sriannapoorneshwarichat/" target="_blank" rel="noopener" aria-label="Instagram">
-          <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg>
-        </a>
+      <div class="foot-brand">
+        <strong>Sri Annapoorneshwari Chat</strong>
+        <span>Cubbonpet Main Road, Bengaluru · Franchise enquiries for owner-operators. <a href="index.html">Back to the main website</a>.</span>
+      </div>
+      <div class="foot-contact">
+        <a class="num" href="tel:+919113982426">+91 91139 82426</a>
+        <div class="foot-actions">
+          <a class="social-icon" href="https://www.instagram.com/sriannapoorneshwarichat/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg>
+          </a>
+          <a class="social-icon" href="https://wa.me/919113982426?text=Namaste!%20I%20am%20interested%20in%20Sri%20Annapoorneshwari%20Chat%20franchise%20opportunities." target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.33 4.95L2 22l5.29-1.39a9.86 9.86 0 0 0 4.75 1.21h.01c5.46 0 9.91-4.44 9.91-9.9A9.92 9.92 0 0 0 12.04 2Zm5.78 14.17c-.25.71-1.47 1.36-2.03 1.4-.52.04-1.17.06-1.89-.12-.44-.11-1-.32-1.72-.63-3.02-1.3-4.99-4.33-5.14-4.53-.15-.2-1.23-1.63-1.23-3.11s.78-2.21 1.06-2.51c.27-.3.6-.38.8-.38h.58c.18.01.44-.07.69.53.25.6.86 2.08.94 2.24.07.15.12.33.02.53-.1.2-.15.32-.3.49-.15.18-.32.39-.46.52-.15.15-.31.31-.13.61.17.3.76 1.25 1.64 2.03 1.13 1 2.08 1.31 2.38 1.46.3.15.47.13.65-.08.17-.2.75-.87.95-1.17.2-.3.4-.25.68-.15.28.1 1.78.84 2.08.99.3.15.5.23.58.35.07.13.07.73-.18 1.44Z"/></svg>
+          </a>
+        </div>
       </div>
     </div>
+    <div class="wrap foot-base">
+      <span>© <span id="year"></span> Sri Annapoorneshwari Chat. All rights reserved.</span>
+      <span>Designed and Built by <strong>Brandhubify team</strong></span>
+    </div>
   </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

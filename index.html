@@ -4,7 +4,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sri Annapoorneshwari Chat | Cubbonpet, Bengaluru</title>
-  <meta name="description" content="Sri Annapoorneshwari Chat in Cubbonpet, Bengaluru. Hygienic, affordable chats for walk-ins, corporate events, and marriage catering with 15 years of expertise.">
+  <meta name="description" content="Sri Annapoorneshwari Chat in Cubbonpet, Bengaluru. Hygienic, affordable chats for walk-ins, corporate events, and marriage catering with 25 years of expertise.">
+  <link rel="canonical" href="https://brandhubify-projects.github.io/annapoorneshwari-chats-cubbonpet/">
+  <meta property="og:type" content="restaurant">
+  <meta property="og:site_name" content="Sri Annapoorneshwari Chat">
+  <meta property="og:title" content="Sri Annapoorneshwari Chat | Cubbonpet, Bengaluru">
+  <meta property="og:description" content="Hygienic, affordable vegetarian chats in Cubbonpet — featured on Star Suvarna’s Bombaat Bhojana. Walk-ins, corporate events and marriage catering.">
+  <meta property="og:url" content="https://brandhubify-projects.github.io/annapoorneshwari-chats-cubbonpet/">
+  <meta property="og:image" content="https://brandhubify-projects.github.io/annapoorneshwari-chats-cubbonpet/assets/real/bhel.jpg">
+  <meta property="og:image:alt" content="Freshly mixed chaat served on a banana leaf at Sri Annapoorneshwari Chat, Cubbonpet">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sri Annapoorneshwari Chat | Cubbonpet, Bengaluru">
+  <meta name="twitter:description" content="Hygienic, affordable vegetarian chats in Cubbonpet — featured on Star Suvarna’s Bombaat Bhojana. Walk-ins, corporate events and marriage catering.">
+  <meta name="twitter:image" content="https://brandhubify-projects.github.io/annapoorneshwari-chats-cubbonpet/assets/real/bhel.jpg">
+  <meta name="theme-color" content="#b73524">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
   <style>
     :root {
       --ink: #191613;
@@ -17,15 +33,26 @@
       --saffron: #f3b72a;
       --green: #138a58;
       --blue: #163a66;
+      --btn-blue: #1d5bb0;
+      --btn-blue-dark: #16488c;
+      --btn-blue-bright: #3f8ae8;
+      --blue-deep: #0e2847;
       --shadow: 0 22px 60px rgba(45, 31, 19, .16);
       --radius: 8px;
     }
 
     * { box-sizing: border-box; }
+    /* Typography matched to terrarco.com (Inter, tight display tracking) */
+    h1 { font-weight: 700; letter-spacing: -.028em; }
+    h2 { font-weight: 700; letter-spacing: -.022em; }
+    h3 { font-weight: 650; letter-spacing: -.014em; }
+    blockquote { letter-spacing: -.018em; }
+    strong, b { font-weight: 650; }
+
     html { scroll-behavior: smooth; }
     body {
       margin: 0;
-      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
       color: var(--ink);
       background: var(--paper);
       line-height: 1.55;
@@ -56,7 +83,10 @@
       align-items: center;
       gap: 12px;
       min-width: 0;
+      flex: 1 1 auto;
+      overflow: hidden;
     }
+    .brand > span { min-width: 0; }
     .mark {
       width: 44px;
       height: 44px;
@@ -66,14 +96,14 @@
       flex: 0 0 auto;
       background: var(--red);
       color: #ffe29a;
-      font-family: Georgia, serif;
+      font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
       font-weight: 700;
       border: 2px solid var(--saffron);
     }
     .brand strong {
       display: block;
       color: var(--red-dark);
-      font-family: Georgia, "Times New Roman", serif;
+      font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
       font-size: 18px;
       line-height: 1.05;
       white-space: nowrap;
@@ -97,7 +127,7 @@
       font-weight: 650;
     }
     .links a:hover { color: var(--red); }
-    .nav-actions { display: flex; align-items: center; gap: 10px; }
+    .nav-actions { display: flex; align-items: center; gap: 10px; flex: 0 0 auto; }
     .social-icon {
       width: 44px;
       height: 44px;
@@ -146,12 +176,24 @@
       transition: transform .18s ease, background .18s ease, color .18s ease;
     }
     .btn:hover { transform: translateY(-1px); }
-    .primary { background: var(--red); color: white; }
-    .primary:hover { background: var(--red-dark); }
+    .primary { background: var(--btn-blue); color: white; }
+    .primary:hover { background: var(--btn-blue-dark); }
     .dark { background: var(--ink); color: var(--saffron); }
     .dark:hover { background: var(--blue); }
     .outline { border-color: rgba(25, 22, 19, .28); color: var(--ink); background: rgba(255,255,255,.42); }
     .outline:hover { background: var(--ink); color: white; }
+    /* outline buttons sitting on the dark blue / navy panels */
+    .catering .primary, .franchise-panel .primary { background: var(--btn-blue-bright); color: #06203f; }
+    .catering .primary:hover, .franchise-panel .primary:hover { background: #ffffff; color: var(--blue); }
+    .catering .outline, .franchise-panel .outline {
+      border-color: rgba(255,255,255,.36);
+      color: #fff;
+      background: rgba(255,255,255,.09);
+    }
+    .catering .outline:hover, .franchise-panel .outline:hover {
+      background: #fff;
+      color: var(--blue);
+    }
     .whatsapp { background: #1f9d5b; color: white; }
     .mobile-menu {
       display: none;
@@ -174,7 +216,7 @@
       overflow: hidden;
       background:
         linear-gradient(90deg, rgba(25,22,19,.9) 0%, rgba(25,22,19,.72) 36%, rgba(25,22,19,.15) 72%),
-        url("assets/chaat-hero.png") center / cover no-repeat;
+        image-set(url("assets/chaat-hero.webp") type("image/webp"), url("assets/chaat-hero.jpg") type("image/jpeg")) center / cover no-repeat;
       color: white;
     }
     .hero .wrap {
@@ -200,11 +242,11 @@
     }
     h1, h2, h3 { margin: 0; }
     h1 {
-      max-width: 780px;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(44px, 8vw, 88px);
-      line-height: .95;
-      letter-spacing: 0;
+      max-width: 820px;
+      font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      font-size: clamp(32px, 4.4vw, 56px);
+      line-height: 1.06;
+      letter-spacing: -.028em;
     }
     .hero p {
       max-width: 590px;
@@ -233,7 +275,7 @@
     .hero-meta strong {
       display: block;
       color: #ffe29a;
-      font-family: Georgia, serif;
+      font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
       font-size: 27px;
       line-height: 1;
     }
@@ -255,7 +297,7 @@
     .center { text-align: center; margin-left: auto; margin-right: auto; }
     h2 {
       color: var(--red-dark);
-      font-family: Georgia, "Times New Roman", serif;
+      font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
       font-size: clamp(32px, 4.7vw, 56px);
       line-height: 1.03;
       letter-spacing: 0;
@@ -298,7 +340,7 @@
       margin-top: 16px;
       color: var(--blue);
       font-size: 27px;
-      font-family: Georgia, serif;
+      font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
       line-height: 1.08;
     }
     .audience-card p {
@@ -329,25 +371,28 @@
       align-items: center;
     }
     .proof-board {
-      background: #f5c338;
-      border: 8px solid var(--red);
+      background:
+        radial-gradient(120% 90% at 50% 0%, rgba(255,255,255,.10), transparent 60%),
+        linear-gradient(168deg, #1d4779 0%, var(--blue) 55%, #102a4b 100%);
+      border: 6px solid rgba(243,183,42,.55);
       border-radius: var(--radius);
       padding: 34px;
       box-shadow: var(--shadow);
       transform: rotate(-.5deg);
     }
     .proof-board h3 {
-      color: var(--red-dark);
-      font-family: Georgia, serif;
+      color: #ffffff;
+      font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
       font-size: clamp(28px, 4vw, 44px);
       line-height: 1;
       text-align: center;
     }
     .proof-board p {
       margin: 16px 0 0;
-      color: #17375e;
+      color: rgba(255,255,255,.74);
       text-align: center;
-      font-weight: 850;
+      font-weight: 650;
+      letter-spacing: .03em;
     }
     .proof-list {
       margin: 28px 0 0;
@@ -361,10 +406,11 @@
       justify-content: space-between;
       gap: 20px;
       padding: 12px 0;
-      border-top: 1px dashed rgba(132,36,22,.42);
-      color: #17375e;
-      font-weight: 800;
+      border-top: 1px dashed rgba(255,255,255,.22);
+      color: rgba(255,255,255,.92);
+      font-weight: 600;
     }
+    .proof-list li > span:last-child { color: var(--saffron); font-weight: 700; }
     .story-copy p {
       color: var(--muted);
       font-size: 17px;
@@ -394,7 +440,7 @@
     .menu-card { padding: 26px; position: sticky; top: 96px; }
     .menu-card h3 {
       color: var(--blue);
-      font-family: Georgia, serif;
+      font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
       font-size: 30px;
       line-height: 1.08;
       margin-bottom: 12px;
@@ -407,6 +453,9 @@
       margin-top: 22px;
     }
     .dish {
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
       min-height: 104px;
       border-radius: var(--radius);
       padding: 13px;
@@ -414,13 +463,22 @@
       align-items: end;
       color: white;
       font-weight: 900;
+      --dish-img: url("assets/real/bhel.jpg");
+    }
+    .dish:before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
       background:
         linear-gradient(180deg, rgba(25,22,19,.05), rgba(25,22,19,.72)),
-        url("assets/menu/bhel.jpg") center / cover;
+        var(--dish-img) center / cover;
+      transition: transform .55s cubic-bezier(.22,.61,.36,1);
     }
-    .dish:nth-child(2) { background-image: linear-gradient(180deg, rgba(25,22,19,.05), rgba(25,22,19,.72)), url("assets/menu/nippat.jpg"); }
-    .dish:nth-child(3) { background-image: linear-gradient(180deg, rgba(25,22,19,.05), rgba(25,22,19,.72)), url("assets/menu/dahi.jpg"); }
-    .dish:nth-child(4) { background-image: linear-gradient(180deg, rgba(25,22,19,.05), rgba(25,22,19,.72)), url("assets/menu/bun.jpg"); }
+    .dish:hover:before { transform: scale(1.07); }
+    .dish:nth-child(2) { --dish-img: url("assets/real/cucumber.jpg"); }
+    .dish:nth-child(3) { --dish-img: url("assets/real/bananastem.jpg"); }
+    .dish:nth-child(4) { --dish-img: url("assets/real/bun.jpg"); }
     .menu-group {
       margin-bottom: 30px;
       padding-bottom: 22px;
@@ -429,7 +487,7 @@
     .menu-group:last-child { border-bottom: 0; margin-bottom: 0; }
     .menu-group h3 {
       color: var(--red-dark);
-      font-family: Georgia, serif;
+      font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
       font-size: 29px;
       margin-bottom: 16px;
     }
@@ -455,7 +513,9 @@
       min-height: 132px;
       background: var(--thumb) center / cover no-repeat;
       border-bottom: 1px solid var(--line);
+      transition: transform .55s cubic-bezier(.22,.61,.36,1);
     }
+    .item:hover:before { transform: scale(1.07); }
     .item strong {
       display: flex;
       align-items: center;
@@ -464,18 +524,26 @@
       padding: 12px;
       min-height: 58px;
     }
-    .item span { color: var(--red); white-space: nowrap; font-family: Georgia, serif; font-size: 16px; }
-    .img-bhel { --thumb: url("assets/menu/bhel.jpg"); }
+    .item span { color: var(--red); white-space: nowrap; font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; font-size: 16px; }
+    /* Real counter photography (shot in-store), WebP with JPEG fallback */
+    .img-bhel { --thumb: image-set(url("assets/real/bhel.webp") type("image/webp"), url("assets/real/bhel.jpg") type("image/jpeg")); }
+    .img-nippat { --thumb: image-set(url("assets/real/nippat.webp") type("image/webp"), url("assets/real/nippat.jpg") type("image/jpeg")); }
+    .img-sprouts { --thumb: image-set(url("assets/real/sprouts.webp") type("image/webp"), url("assets/real/sprouts.jpg") type("image/jpeg")); }
+    .img-bun { --thumb: image-set(url("assets/real/bun.webp") type("image/webp"), url("assets/real/bun.jpg") type("image/jpeg")); }
+    .img-pineapple { --thumb: image-set(url("assets/real/pineapple.webp") type("image/webp"), url("assets/real/pineapple.jpg") type("image/jpeg")); }
+    .img-dahi { --thumb: image-set(url("assets/real/dahi.webp") type("image/webp"), url("assets/real/dahi.jpg") type("image/jpeg")); }
+    .img-cucumber { --thumb: image-set(url("assets/real/cucumber.webp") type("image/webp"), url("assets/real/cucumber.jpg") type("image/jpeg")); }
+    .img-bananastem { --thumb: image-set(url("assets/real/bananastem.webp") type("image/webp"), url("assets/real/bananastem.jpg") type("image/jpeg")); }
+    .img-tomato { --thumb: image-set(url("assets/real/tomato.webp") type("image/webp"), url("assets/real/tomato.jpg") type("image/jpeg")); }
+    .img-chips { --thumb: image-set(url("assets/real/chips.webp") type("image/webp"), url("assets/real/chips.jpg") type("image/jpeg")); }
+    .img-bhelplate { --thumb: image-set(url("assets/real/bhelplate.webp") type("image/webp"), url("assets/real/bhelplate.jpg") type("image/jpeg")); }
+    .img-cones { --thumb: image-set(url("assets/real/cones.webp") type("image/webp"), url("assets/real/cones.jpg") type("image/jpeg")); }
+    /* no in-store photo on file yet for these two */
     .img-tikki { --thumb: url("assets/menu/tikki.jpg"); }
-    .img-nippat { --thumb: url("assets/menu/nippat.jpg"); }
-    .img-sprouts { --thumb: url("assets/menu/sprouts.jpg"); }
-    .img-dahi { --thumb: url("assets/menu/dahi.jpg"); }
-    .img-bun { --thumb: url("assets/menu/bun.jpg"); }
     .img-corn { --thumb: url("assets/menu/corn.jpg"); }
-    .img-pineapple { --thumb: url("assets/menu/pineapple.jpg"); }
 
     .catering {
-      background: var(--red-dark);
+      background: linear-gradient(165deg, #17406f 0%, var(--blue-deep) 58%, #0b1f38 100%);
       color: white;
       position: relative;
       overflow: hidden;
@@ -484,7 +552,7 @@
       content: "";
       position: absolute;
       inset: 0;
-      background: linear-gradient(120deg, rgba(243,183,42,.18), transparent 50%);
+      background: linear-gradient(120deg, rgba(243,183,42,.20), transparent 52%);
       pointer-events: none;
     }
     .catering .wrap { position: relative; }
@@ -505,7 +573,7 @@
       min-height: 218px;
     }
     .event h3 {
-      font-family: Georgia, serif;
+      font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
       color: #ffe29a;
       font-size: 27px;
       line-height: 1.08;
@@ -514,7 +582,7 @@
     .catering-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 34px; }
 
     .franchise-strip {
-      background: #fff7e8;
+      background: var(--soft);
       border-top: 1px solid var(--line);
       border-bottom: 1px solid var(--line);
     }
@@ -527,10 +595,14 @@
       border: 1px solid var(--line);
       border-radius: var(--radius);
       background:
-        linear-gradient(135deg, rgba(243,183,42,.28), rgba(255,250,240,.7)),
-        var(--paper);
-      box-shadow: var(--shadow);
+        radial-gradient(110% 120% at 100% 0%, rgba(243,183,42,.16), transparent 58%),
+        linear-gradient(150deg, #1d4779 0%, var(--blue) 52%, #102a4b 100%);
+      border-color: rgba(255,255,255,.14);
+      color: white;
+      box-shadow: 0 24px 60px rgba(16, 32, 56, .28);
     }
+    .franchise-panel h2 { color: white; }
+    .franchise-panel .lead { color: rgba(255,255,255,.76); }
     .franchise-panel h2 { max-width: 760px; }
     .franchise-points {
       display: grid;
@@ -543,8 +615,8 @@
       display: flex;
       gap: 12px;
       align-items: flex-start;
-      color: #41372e;
-      font-weight: 750;
+      color: rgba(255,255,255,.90);
+      font-weight: 600;
     }
     .franchise-points li:before {
       content: "";
@@ -553,8 +625,8 @@
       flex: 0 0 auto;
       margin-top: 7px;
       border-radius: 50%;
-      background: var(--red);
-      box-shadow: 0 0 0 4px rgba(183,53,36,.12);
+      background: var(--saffron);
+      box-shadow: 0 0 0 4px rgba(243,183,42,.18);
     }
     .franchise-actions {
       display: flex;
@@ -586,7 +658,7 @@
       color: var(--muted);
       font-weight: 800;
     }
-    .rating-row b { color: var(--red-dark); font-size: 24px; font-family: Georgia, serif; }
+    .rating-row b { color: var(--red-dark); font-size: 24px; font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
 
     .visit {
       background: var(--blue);
@@ -628,19 +700,58 @@
     .map iframe { width: 100%; height: 100%; border: 0; display: block; }
 
     footer {
-      padding: 34px 0;
+      padding: 56px 0 88px; /* bottom clearance so the floating WhatsApp button never covers the credit */
       background: #120f0d;
-      color: rgba(255,255,255,.68);
+      color: rgba(255,255,255,.62);
     }
     .foot {
       display: flex;
       justify-content: space-between;
-      gap: 20px;
-      align-items: center;
+      gap: 32px;
+      align-items: flex-start;
       flex-wrap: wrap;
       font-size: 14px;
+      padding-bottom: 30px;
     }
-    .foot strong { color: white; }
+    .foot-brand strong {
+      display: block;
+      color: white;
+      font-size: 19px;
+      letter-spacing: -.02em;
+      margin-bottom: 7px;
+    }
+    .foot-brand span { display: block; max-width: 440px; line-height: 1.6; }
+    .foot-contact { display: grid; gap: 10px; justify-items: end; text-align: right; }
+    .foot-contact a { color: rgba(255,255,255,.74); }
+    .foot-contact a:hover { color: white; }
+    .foot-contact .num {
+      color: white;
+      font-size: 19px;
+      font-weight: 650;
+      letter-spacing: -.01em;
+    }
+    /* icons must not inherit the light-header treatment on a dark footer */
+    footer .social-icon {
+      background: rgba(255,255,255,.07);
+      border-color: rgba(255,255,255,.17);
+      color: rgba(255,255,255,.82);
+    }
+    footer .social-icon:hover { background: white; color: #120f0d; }
+    .foot-base {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      padding-top: 22px;
+      border-top: 1px solid rgba(255,255,255,.11);
+      font-size: 13px;
+      color: rgba(255,255,255,.45);
+    }
+    .foot-base strong { color: rgba(255,255,255,.82); font-weight: 650; }
+    .foot-base a { color: rgba(255,255,255,.62); }
+    .foot-base a:hover { color: white; }
+
     .foot-actions {
       display: flex;
       align-items: center;
@@ -662,6 +773,193 @@
       box-shadow: 0 14px 32px rgba(19,138,88,.36);
     }
 
+    /* ============ Recognition: Bombaat Bhojana ============ */
+    .recognition {
+      --rec-bg: image-set(url("assets/real/award-certificate-bg.webp") type("image/webp"), url("assets/real/award-certificate-bg.jpg") type("image/jpeg"));
+      background:
+        linear-gradient(100deg, rgba(14,12,10,.93) 0%, rgba(14,12,10,.86) 46%, rgba(14,12,10,.62) 100%),
+        var(--rec-bg) center / cover no-repeat fixed;
+      color: white;
+    }
+    .rec-grid {
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 46px;
+      align-items: center;
+    }
+    .recognition h2 { color: white; }
+    .recognition .eyebrow { color: var(--saffron); }
+    .rec-copy p { color: rgba(255,255,255,.78); }
+    .rec-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 15px;
+      border-radius: 999px;
+      border: 1px solid rgba(243,183,42,.42);
+      background: rgba(243,183,42,.12);
+      color: var(--saffron);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+    .rec-picks {
+      margin: 24px 0 0;
+      padding: 20px 22px;
+      list-style: none;
+      border-radius: var(--radius);
+      border: 1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.055);
+    }
+    .rec-picks ul { list-style: none; margin: 0; padding: 0; }
+    .rec-picks > small {
+      display: block;
+      color: var(--saffron);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    .rec-picks li {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      padding: 7px 0;
+      font-weight: 650;
+      color: rgba(255,255,255,.93);
+    }
+    .rec-picks li + li { border-top: 1px solid rgba(255,255,255,.09); }
+    .rec-picks li:before {
+      content: "★";
+      color: var(--saffron);
+      font-size: 13px;
+      flex: 0 0 auto;
+    }
+    .rec-media { display: grid; gap: 12px; }
+    .rec-media figure { margin: 0; position: relative; overflow: hidden; border-radius: var(--radius); }
+    .rec-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .55s cubic-bezier(.22,.61,.36,1);
+    }
+    .rec-media img { aspect-ratio: 1 / 1; }
+    .rec-media figure:hover img { transform: scale(1.06); }
+
+    @media (prefers-reduced-motion: reduce) {
+      .item:before, .dish:before, .fresh-card img,
+      .featured-review img, .rec-media img { transition: none; }
+      .item:hover:before, .dish:hover:before, .fresh-card:hover img,
+      .featured-review:hover img, .rec-media figure:hover img { transform: none; }
+    }
+    .rec-media figcaption {
+      position: absolute;
+      left: 0; right: 0; bottom: 0;
+      padding: 30px 18px 15px;
+      background: linear-gradient(180deg, transparent, rgba(12,9,7,.85));
+      color: white;
+      font-size: 12px;
+      font-weight: 650;
+    }
+
+    /* ============ Freshness strip ============ */
+    .fresh { background: var(--soft); }
+    .fresh-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 34px;
+    }
+    .fresh-card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .fresh-card img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-bottom: 1px solid var(--line);
+      transition: transform .55s cubic-bezier(.22,.61,.36,1);
+    }
+    .fresh-card:hover img { transform: scale(1.06); }
+    .fresh-card div { padding: 14px 15px 16px; }
+    .fresh-card strong {
+      display: block;
+      font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      font-size: 17px;
+      color: var(--red-dark);
+      margin-bottom: 3px;
+    }
+    .fresh-card small { color: var(--muted); font-size: 13px; line-height: 1.45; display: block; }
+
+    /* ============ Featured testimonial ============ */
+    .featured-review {
+      display: grid;
+      grid-template-columns: 400px 1fr;
+      gap: 0;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      overflow: hidden;
+      background: #fff;
+      box-shadow: var(--shadow);
+      margin-bottom: 26px;
+    }
+    .featured-review picture { overflow: hidden; display: block; }
+    .featured-review img {
+      width: 100%; height: 100%; min-height: 260px; object-fit: cover;
+      transition: transform .55s cubic-bezier(.22,.61,.36,1);
+    }
+    .featured-review:hover img { transform: scale(1.05); }
+    .featured-body { padding: 34px 36px; display: flex; flex-direction: column; justify-content: center; }
+    .featured-tag {
+      display: inline-block;
+      align-self: flex-start;
+      padding: 6px 13px;
+      border-radius: 999px;
+      background: var(--btn-blue);
+      color: #ffffff;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    .featured-body blockquote {
+      margin: 0 0 18px;
+      font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      font-size: 23px;
+      line-height: 1.45;
+      color: var(--ink);
+    }
+    .featured-who { display: flex; align-items: center; gap: 13px; }
+    .featured-who b { display: block; color: var(--blue); font-size: 15px; }
+    .featured-who span { display: block; color: var(--muted); font-size: 13px; }
+
+    /* avatar initials on reviews */
+    .review-who { display: flex; align-items: center; gap: 11px; margin-top: 16px; }
+    .avatar {
+      width: 40px; height: 40px;
+      flex: 0 0 auto;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: var(--soft);
+      border: 1px solid var(--line);
+      color: var(--red-dark);
+      font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+    }
+    .review-who b { display: block; color: var(--blue); font-size: 14.5px; }
+    .review-who span { display: block; color: var(--muted); font-size: 12.5px; }
+    .review { display: flex; flex-direction: column; }
+    .review p { flex: 1; }
+
     @media (max-width: 920px) {
       .links { display: none; }
       .icon-btn { display: inline-flex; }
@@ -671,6 +969,13 @@
       .hero { min-height: auto; background-position: 65% center; }
       .hero .wrap { padding: 88px 0 42px; }
       .hero-meta { grid-template-columns: repeat(2, 1fr); }
+      .rec-grid { grid-template-columns: 1fr; gap: 34px; }
+      .fresh-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .featured-review { grid-template-columns: 1fr; }
+      .featured-review img { min-height: 0; aspect-ratio: 16 / 10; }
+      .featured-body { padding: 28px 26px; }
+      .featured-body blockquote { font-size: 20px; }
+      .recognition { background-attachment: scroll; }
       .audience-grid, .story-grid, .menu-layout, .event-grid, .reviews-grid, .visit-grid, .franchise-panel {
         grid-template-columns: 1fr;
       }
@@ -687,10 +992,10 @@
       .hero {
         background:
           linear-gradient(180deg, rgba(25,22,19,.86) 0%, rgba(25,22,19,.58) 55%, rgba(25,22,19,.9) 100%),
-          url("assets/chaat-hero.png") 68% center / cover no-repeat;
+          image-set(url("assets/chaat-hero.webp") type("image/webp"), url("assets/chaat-hero.jpg") type("image/jpeg")) 68% center / cover no-repeat;
       }
       .hero .wrap { width: min(100% - 28px, 1160px); padding: 78px 0 32px; }
-      h1 { font-size: clamp(40px, 14vw, 64px); }
+      h1 { font-size: clamp(29px, 7.6vw, 38px); line-height: 1.1; }
       .hero p { font-size: 16px; }
       .hero-actions, .catering-actions, .franchise-actions { flex-direction: column; }
       .hero-actions .btn, .catering-actions .btn, .franchise-actions .btn { width: 100%; }
@@ -705,6 +1010,15 @@
       .dish-strip { grid-template-columns: 1fr; }
       .item { font-size: 14px; }
       .review, .event, .audience-card, .menu-card { padding: 22px; }
+      .fresh-grid { grid-template-columns: 1fr; gap: 14px; }
+      .foot { gap: 24px; }
+      .foot-base { flex-direction: column; align-items: flex-start; gap: 8px; }
+      .foot-contact { justify-items: flex-start; }
+      .fresh-card img { aspect-ratio: 16 / 10; }
+      .rec-media { grid-template-columns: 1fr; }
+      .featured-body { padding: 24px 20px; }
+      .featured-body blockquote { font-size: 18.5px; }
+      .rec-picks { padding: 17px 18px; }
       .franchise-panel { padding: 24px; }
       .item { grid-template-rows: 108px auto; }
       .item:before { min-height: 108px; }
@@ -723,12 +1037,9 @@
         </span>
       </a>
       <nav class="links" aria-label="Primary navigation">
-        <a href="#customers">Customers</a>
-        <a href="#story">Story</a>
         <a href="#menu">Menu</a>
         <a href="#catering">Catering</a>
         <a href="franchise.html">Franchise</a>
-        <a href="#reviews">Reviews</a>
         <a href="#visit">Visit</a>
       </nav>
       <div class="nav-actions">
@@ -744,12 +1055,9 @@
       </div>
     </div>
     <div class="wrap mobile-menu" id="mobileMenu">
-      <a href="#customers">Customers</a>
-      <a href="#story">Story</a>
       <a href="#menu">Menu</a>
       <a href="#catering">Catering</a>
       <a href="franchise.html">Franchise</a>
-      <a href="#reviews">Reviews</a>
       <a href="#visit">Visit</a>
       <a href="https://www.instagram.com/sriannapoorneshwarichat/" target="_blank" rel="noopener">Instagram</a>
     </div>
@@ -758,7 +1066,7 @@
   <main>
     <section class="hero">
       <div class="wrap">
-        <div class="eyebrow">15 years of chaat expertise</div>
+        <div class="eyebrow">25 years of chaat expertise</div>
         <h1>Clean, classic Bengaluru chats for everyday cravings and grand occasions.</h1>
         <p>Sri Annapoorneshwari Chat serves affordable vegetarian street food from Cubbonpet, with catering for individual orders, corporate events, and marriage functions.</p>
         <div class="hero-actions">
@@ -767,9 +1075,9 @@
         </div>
         <div class="hero-meta" aria-label="Highlights">
           <div><strong>4.7</strong><span>Google rating</span></div>
-          <div><strong>53</strong><span>Reviews</span></div>
-          <div><strong>₹1-200</strong><span>Popular range</span></div>
-          <div><strong>15 yrs</strong><span>Experience</span></div>
+          <div><strong>25+</strong><span>Chaat varieties</span></div>
+          <div><strong>500+</strong><span>Events served</span></div>
+          <div><strong>25 yrs</strong><span>Experience</span></div>
         </div>
       </div>
     </section>
@@ -818,7 +1126,7 @@
           <ul class="proof-list">
             <li><span>Known for</span><span>Dry chats & masalas</span></li>
             <li><span>Customer love</span><span>4.7 from 53 reviews</span></li>
-            <li><span>Experience</span><span>15 years</span></li>
+            <li><span>Experience</span><span>25 years</span></li>
             <li><span>Events</span><span>Corporate & marriage catering</span></li>
           </ul>
         </div>
@@ -826,8 +1134,81 @@
           <div class="eyebrow">Trusted local name</div>
           <h2>A Cubbonpet favourite with a serious eye for hygiene.</h2>
           <p>The shop is loved for crisp puris, generous masalas, affordable pricing, and a clean counter experience. Reviews repeatedly call out hygiene, taste, and friendly service.</p>
-          <p>With 15 years of expertise, Sri Annapoorneshwari Chat has grown from daily walk-in plates to handling larger event orders without losing the freshness and speed of a classic Bengaluru chaat counter.</p>
+          <p>With 25 years of expertise, Sri Annapoorneshwari Chat has grown from daily walk-in plates to handling larger event orders without losing the freshness and speed of a classic Bengaluru chaat counter.</p>
           <div class="spotlight">Honoured by visits from public figures including an MLA and Sihi Kahi Chandru, a well-known Kannada actor and food personality.</div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="recognition" id="recognition">
+      <div class="wrap rec-grid">
+        <div class="rec-copy">
+          <div class="rec-badge">★ Star Suvarna · Bombaat Bhojana</div>
+          <h2>Featured on Bombaat Bhojana, with a five-star Bombaat Recommendation.</h2>
+          <p>Sihi Kahi Chandru and the <em>Bombaat Bhojana</em> team visited the Cubbonpet counter, tasted the specials, and left a signed certificate of recommendation — the same plates served to every walk-in customer, with nothing staged for the camera.</p>
+          <div class="rec-picks">
+            <small>Bombaat Recommendation</small>
+            <ul>
+            <li>Pineapple Masala</li>
+            <li>Molke Kalu Masala</li>
+            <li>Bun Nippat Masala</li>
+            </ul>
+          </div>
+        </div>
+        <div class="rec-media">
+          <figure>
+            <picture>
+              <source srcset="assets/real/award-certificate.webp" type="image/webp">
+              <img src="assets/real/award-certificate.jpg" loading="lazy" decoding="async" width="760" height="760"
+                   alt="Sihi Kahi Chandru presenting the Bombaat Bhojana certificate of recommendation to the owner of Sri Annapoorneshwari Chat">
+            </picture>
+            <figcaption>The signed Bombaat Bhojana certificate</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="fresh" id="fresh">
+      <div class="wrap">
+        <div class="section-head center">
+          <div class="eyebrow">Prepped fresh daily</div>
+          <h2>Cut, sprouted, and mixed the same morning it is served.</h2>
+          <p class="lead">Nothing sits overnight. These are the trays the counter actually works from — which is why reviews keep coming back to hygiene and freshness.</p>
+        </div>
+        <div class="fresh-grid">
+          <article class="fresh-card">
+            <picture>
+              <source srcset="assets/real/prep-sprouts.webp" type="image/webp">
+              <img src="assets/real/prep-sprouts.jpg" loading="lazy" decoding="async" width="420" height="420"
+                   alt="Freshly sprouted green gram next to chopped carrot, onion and coriander">
+            </picture>
+            <div><strong>Fresh sprouts</strong><small>Green gram sprouted in-house for sprouts masala.</small></div>
+          </article>
+          <article class="fresh-card">
+            <picture>
+              <source srcset="assets/real/prep-corn.webp" type="image/webp">
+              <img src="assets/real/prep-corn.jpg" loading="lazy" decoding="async" width="420" height="420"
+                   alt="Bowls of steamed sweet corn and sprouted green gram">
+            </picture>
+            <div><strong>Steamed sweet corn</strong><small>Cooked each morning for sweet corn masala.</small></div>
+          </article>
+          <article class="fresh-card">
+            <picture>
+              <source srcset="assets/real/prep-pomegranate.webp" type="image/webp">
+              <img src="assets/real/prep-pomegranate.jpg" loading="lazy" decoding="async" width="420" height="420"
+                   alt="A steel bowl filled with hand-deseeded pomegranate">
+            </picture>
+            <div><strong>Hand-deseeded pomegranate</strong><small>Deseeded by hand for topping the dry chats.</small></div>
+          </article>
+          <article class="fresh-card">
+            <picture>
+              <source srcset="assets/real/prep-pineapple.webp" type="image/webp">
+              <img src="assets/real/prep-pineapple.jpg" loading="lazy" decoding="async" width="420" height="420"
+                   alt="Freshly cut pineapple batons prepared for pineapple masala">
+            </picture>
+            <div><strong>Freshly cut pineapple</strong><small>Peeled and cut daily for the pineapple specials.</small></div>
+          </article>
         </div>
       </div>
     </section>
@@ -841,9 +1222,9 @@
           <a class="btn dark" href="https://wa.me/919113982426?text=Namaste!%20Please%20share%20the%20current%20menu%20and%20prices." target="_blank" rel="noopener">Ask for Current Menu</a>
           <div class="dish-strip" aria-label="Featured chaat visuals">
             <div class="dish">Bhel Puri</div>
-            <div class="dish">Nippat Masala</div>
-            <div class="dish">Dahi Chats</div>
-            <div class="dish">Event Counter</div>
+            <div class="dish">Cucumber Slice</div>
+            <div class="dish">Banana Stem</div>
+            <div class="dish">Bun Masala</div>
           </div>
         </aside>
         <div>
@@ -863,12 +1244,13 @@
             <div class="items">
               <div class="item img-nippat"><strong>Nippat Masala <span>₹40+</span></strong></div>
               <div class="item img-bun"><strong>Bun Nippat Masala <span>₹60+</span></strong></div>
-              <div class="item img-nippat"><strong>Kodbale Masala <span>₹40+</span></strong></div>
+              <div class="item img-chips"><strong>Kodbale Masala <span>₹40+</span></strong></div>
               <div class="item img-nippat"><strong>Kurkure Masala <span>₹50+</span></strong></div>
-              <div class="item img-nippat"><strong>Congress Masala <span>₹50+</span></strong></div>
+              <div class="item img-bhelplate"><strong>Congress Masala <span>₹50+</span></strong></div>
               <div class="item img-bhel"><strong>3 in 1 Masala <span>₹60+</span></strong></div>
-              <div class="item img-nippat"><strong>Time Pass Masala <span>₹40+</span></strong></div>
-              <div class="item img-nippat"><strong>Onion Chakli Masala <span>₹50+</span></strong></div>
+              <div class="item img-chips"><strong>Time Pass Masala <span>₹40+</span></strong></div>
+              <div class="item img-bhelplate"><strong>Onion Chakli Masala <span>₹50+</span></strong></div>
+              <div class="item img-bananastem"><strong>Banana Stem Masala <span>₹60+</span></strong></div>
             </div>
           </div>
           <div class="menu-group">
@@ -879,9 +1261,9 @@
               <div class="item img-dahi"><strong>Dahi Tikki Puri <span>₹50+</span></strong></div>
               <div class="item img-dahi"><strong>Dahi Nippat Masala <span>₹50+</span></strong></div>
               <div class="item img-dahi"><strong>Dahi Kodbale Masala <span>₹50+</span></strong></div>
-              <div class="item img-sprouts"><strong>Tomato Slice <span>₹40+</span></strong></div>
-              <div class="item img-sprouts"><strong>Cucumber Slice Masala <span>₹40+</span></strong></div>
-              <div class="item img-nippat"><strong>Chips Masala <span>₹40+</span></strong></div>
+              <div class="item img-tomato"><strong>Tomato Slice <span>₹40+</span></strong></div>
+              <div class="item img-cucumber"><strong>Cucumber Slice Masala <span>₹40+</span></strong></div>
+              <div class="item img-cones"><strong>Masala Cones <span>₹60+</span></strong></div>
             </div>
           </div>
         </div>
@@ -920,7 +1302,7 @@
           <div>
             <div class="eyebrow">Franchise opportunity</div>
             <h2>Learn the craft of delicious chaat and build with a trusted Cubbonpet name.</h2>
-            <p class="lead">For serious food entrepreneurs, Sri Annapoorneshwari Chat can share the operating style behind its 15-year journey: recipes, counter discipline, hygiene practices, sourcing basics, and customer service habits.</p>
+            <p class="lead">For serious food entrepreneurs, Sri Annapoorneshwari Chat can share the operating style behind its 25-year journey: recipes, counter discipline, hygiene practices, sourcing basics, and customer service habits.</p>
             <div class="franchise-actions">
               <a class="btn primary" href="franchise.html">Explore Franchise Page</a>
               <a class="btn outline" href="mailto:?subject=Franchise%20enquiry%20-%20Sri%20Annapoorneshwari%20Chat&body=Namaste%2C%0A%0AI%20am%20interested%20in%20learning%20more%20about%20Sri%20Annapoorneshwari%20Chat%20franchise%20opportunities.%0A%0AName%3A%0ACity%3A%0APhone%3A%0AExperience%20in%20food%20business%3A%0A%0AThank%20you.">Send Enquiry Email</a>
@@ -942,21 +1324,48 @@
           <div class="eyebrow">Google reviews</div>
           <h2>People come back for taste, hygiene, and value.</h2>
         </div>
+        <article class="featured-review">
+          <picture>
+            <source srcset="assets/real/featured-team.webp" type="image/webp">
+            <img src="assets/real/featured-team.jpg" loading="lazy" decoding="async" width="900" height="680"
+                 alt="Sihi Kahi Chandru with the owners outside Sri Annapoorneshwari Chats in Cubbonpet">
+          </picture>
+          <div class="featured-body">
+            <span class="featured-tag">Featured recommendation</span>
+            <div class="stars">★★★★★</div>
+            <blockquote>“A five-star Bombaat Recommendation for the Pineapple Masala, Molke Kalu Masala and Bun Nippat Masala.”</blockquote>
+            <div class="featured-who">
+              <div>
+                <b>Team Bombaat Bhojana</b>
+                <span>Star Suvarna · presented by Sihi Kahi Chandru</span>
+              </div>
+            </div>
+          </div>
+        </article>
         <div class="reviews-grid">
           <article class="review">
             <div class="stars">★★★★★</div>
             <p>“Hygiene food. Affordable rate. Service is excellent.”</p>
-            <strong>Bharath M</strong>
+            <div class="review-who">
+              <div class="avatar" aria-hidden="true">B</div>
+              <div><b>Bharath M</b><span>Google review</span></div>
+            </div>
           </article>
           <article class="review">
             <div class="stars">★★★★★</div>
             <p>“Sprouts masala is awesome.”</p>
-            <strong>Rahul Gogoi</strong>
+            <div class="review-who">
+              <div class="avatar" aria-hidden="true">R</div>
+              <div><b>Rahul Gogoi</b><span>Google review</span></div>
+            </div>
           </article>
           <article class="review">
             <div class="stars">★★★★★</div>
             <p>“Located in Cubbonpet main road, dry chats served here are mouth watering. Must try Boti Masala, Tikki Puri.”</p>
-            <strong>Ganesh Darshan</strong>
+            <div class="review-who">
+              <div class="avatar" aria-hidden="true">G</div>
+              <div><b>Ganesh Darshan</b><span>Google review</span></div>
+            </div>
           </article>
         </div>
         <div class="rating-row">
@@ -998,13 +1407,25 @@
 
   <footer>
     <div class="wrap foot">
-      <div><strong>Sri Annapoorneshwari Chat</strong> · Cubbonpet, Bengaluru</div>
-      <div class="foot-actions">
-        <span>© <span id="year"></span> · Vegetarian chats and <a href="franchise.html">franchise enquiries</a></span>
-        <a class="social-icon" href="https://www.instagram.com/sriannapoorneshwarichat/" target="_blank" rel="noopener" aria-label="Instagram">
-          <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg>
-        </a>
+      <div class="foot-brand">
+        <strong>Sri Annapoorneshwari Chat</strong>
+        <span>Cubbonpet Main Road, Bengaluru · Vegetarian chats, corporate and marriage catering, and <a href="franchise.html">franchise enquiries</a>.</span>
       </div>
+      <div class="foot-contact">
+        <a class="num" href="tel:+919113982426">+91 91139 82426</a>
+        <div class="foot-actions">
+          <a class="social-icon" href="https://www.instagram.com/sriannapoorneshwarichat/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg>
+          </a>
+          <a class="social-icon" href="https://wa.me/919113982426" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.33 4.95L2 22l5.29-1.39a9.86 9.86 0 0 0 4.75 1.21h.01c5.46 0 9.91-4.44 9.91-9.9A9.92 9.92 0 0 0 12.04 2Zm5.78 14.17c-.25.71-1.47 1.36-2.03 1.4-.52.04-1.17.06-1.89-.12-.44-.11-1-.32-1.72-.63-3.02-1.3-4.99-4.33-5.14-4.53-.15-.2-1.23-1.63-1.23-3.11s.78-2.21 1.06-2.51c.27-.3.6-.38.8-.38h.58c.18.01.44-.07.69.53.25.6.86 2.08.94 2.24.07.15.12.33.02.53-.1.2-.15.32-.3.49-.15.18-.32.39-.46.52-.15.15-.31.31-.13.61.17.3.76 1.25 1.64 2.03 1.13 1 2.08 1.31 2.38 1.46.3.15.47.13.65-.08.17-.2.75-.87.95-1.17.2-.3.4-.25.68-.15.28.1 1.78.84 2.08.99.3.15.5.23.58.35.07.13.07.73-.18 1.44Z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="wrap foot-base">
+      <span>© <span id="year"></span> Sri Annapoorneshwari Chat. All rights reserved.</span>
+      <span>Designed and Built by <strong>Brandhubify team</strong></span>
     </div>
   </footer>
 
