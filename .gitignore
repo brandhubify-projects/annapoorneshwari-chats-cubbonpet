@@ -1,2 +1,6 @@
 .DS_Store
 Thumbs.db
+
+# brand previews: publish only the encrypted gate, never the sources
+brand/logo-concepts.html
+brand/svg/
